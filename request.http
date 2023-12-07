@@ -1,0 +1,81 @@
+GET http://localhost:3000/api/short-links/
+
+###
+
+POST http://localhost:3000/api/short-links/
+Content-Type: application/json
+
+{
+    "title" : "asdf123",
+    "url" : "https://codeit.kr"
+}
+
+###
+
+GET http://localhost:3000/api/short-links/656fdf4e62ba24630b148e18
+
+###
+
+PATCH http://localhost:3000/api/short-links/656fdf4e62ba24630b148e18
+Content-Type: application/json
+
+{
+    "title" : "qwer-edit-3",
+    "url" : "https://codeit.kr"
+}
+
+###
+
+DELETE http://localhost:3000/api/short-links/656fdf4e62ba24630b148e18
+
+###
+
+POST http://localhost:3000/api/short-links/656fdf4e62ba24630b148e18
+Content-Type: application/json
+
+{
+    "title" : "qwer23",
+    "url" : "https://codeit.kr"
+}
+
+##########################################
+
+GET http://localhost:3000/api/short-links
+
+###
+
+POST http://localhost:3000/api/short-links
+Content-Type: application/json
+
+{
+  "title": "위키피디아 Next.js",
+  "url": "https://en.wikipedia.org/wiki/Next.js"
+}
+
+###
+
+PATCH http://localhost:3000/api/short-links
+
+###############################
+
+GET http://localhost:3000/api/short-links/abc
+
+###
+
+PATCH http://localhost:3000/api/short-links/656fdf3b62ba24630b148e14
+Content-Type: application/json
+
+{
+  "title": "위키피디아 Next.js",
+  "url": "https://en.wikipedia.org/wiki/Next.js"
+}
+
+###
+
+DELETE http://localhost:3000/api/short-links/abc
+
+###
+
+POST http://localhost:3000/api/short-links/abc
+
+###
